@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myscribblebook</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- nav section -->
+    <nav>
+        <div class="brandImg">
+            <img src="logo.png" alt="logo">
+        </div>
+        <div class="brandName">
+            <ul>
+                <li>MY SCRIBBLE BOOK</li>
+                <li class="nft">NFT</li>
+            </ul>
+        </div>
+        <div class="brandLink">
+            <a href="#">OpenSea</a>
+        </div>
+    </nav>
+    <!-- end of nav section  -->
+    <!-- home section -->
+    <section class="home">
+        <div class="homeSection">
+            <img src="hari banner pic.jpeg" alt="banner pic" class="bannerImg">
+        </div>
+        <div class="bannerText">
+            <h1>Collection my scribble book</h1>
+            <h3>Overview</h3>
+            <p>
+                MY SCRIBBLE BOOK - is a collection of simple cartoon images, 
+                random painting, sketches, unique artworks, super-hero drawings.
+                Each artwork is handmade. Everything we create is inspired from
+                what we come across everyday.
+            </p>
+            <a href="#">Click here to check out our collection</a>
+        </div>
+    </section>
+    <!-- end of home section -->
+
+    <!-- collection section -->
+    <section class="collection">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" id="radio1" name="radios">
+                <input type="radio" id="radio2" name="radios">
+                <input type="radio" id="radio3" name="radios">
+                <input type="radio" id="radio4" name="radios">
+                <input type="radio" id="radio5" name="radios">
+                <div class="slide">
+                    <img src="collection1.jpeg" alt="">
+                </div>
+                <div class="slide first">
+                    <img src="collection2.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="collection3.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="collection4.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="collection5.jpeg" alt="">
+                </div>
+                <div class="auto">
+                    <div class="auto1"></div>
+                    <div class="auto2"></div>
+                    <div class="auto3"></div>
+                    <div class="auto4"></div>
+                    <div class="auto5"></div>
+                </div>
+            </div>
+            <div class="manual">
+                <label for="radio1" class="manuals"></label>
+                <label for="radio2" class="manuals"></label>
+                <label for="radio3" class="manuals"></label>
+                <label for="radio4" class="manuals"></label>
+                <label for="radio5" class="manuals"></label>
+            </div>
+        </div>
+
+    </section>
+    <!-- end of collection section -->
+
+<!-- team section -->
+    <section class="team">
+        <div class="teamSection">
+            <img src="collection2.jpeg" alt="">
+            <div class="teamText">
+                <h1>THE TEAM</h1>
+                <h2>Swathi</h2>
+                <p>
+                    ARTIST, creates all these wonderful 
+                    <a href="#" class="teamLink">MY SCRIBBLE BOOK</a> NFTs.
+                    She spends all her time to create beautiful NFTs. She also 
+                    makes sure that everythings works perfect.
+                </p>
+                <h2>Sreeram</h2>
+                <p>
+                    MOTIVATOR, ADVISOR and helps to make all NFTs to be perfect 
+                    as much as possible. He encourages us to create more and more.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- end of team section -->
+
+    <!-- footer section -->
+    <footer>
+        <div class="footer">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <p class="end">© 2022 MY SCRIBBLE BOOK</p>
+    </footer>
+    <!-- end of footer section -->
+
+
+    <!-- script section -->
+    <script>
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter = counter + 1;
+            if(counter>5){
+                counter = 1;
+            }
+        },2000);
+    </script>
+    <!-- end of script section -->
+
+
+</body>
+</html>

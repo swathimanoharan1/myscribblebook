@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ------media queries for laptop------ */
+@media screen and (min-width: 1024px){
+    
+nav{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+nav img{
+    height: 70px;
+    width: 70px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+nav ul li{
+    list-style-type: none;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-size: 23px;
+    width: 100%;
+}
+.nft{
+    font-weight: normal;
+}
+.brandLink{
+    height: 80px;
+    width: 75%;
+    padding-top: 40px;
+}
+.brandLink a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    float: right;
+}
+/* ------end of nav section------ */
+
+/* ------home section------ */
+.bannerImg{
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.bannerText{
+    height: 450px;
+    width: 100%;
+    background-color: skyblue;
+    padding-top: 100px;
+}
+.bannerText h1{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 50px;
+}
+.bannerText h3{
+    font-size: 30px;
+    font-weight: normal;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.bannerText p{
+    text-align: center;
+    font-size: 22px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.bannerText a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 70px;
+}
+/* ------end of home section------ */
+
+/* ------collection section------ */
+.collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+.slider{
+    width: 600px;
+    height: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 700px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 1s;
+}
+.slide img{
+    width: 600px;
+    height: 700px;
+}
+.manual{
+    position: absolute;
+    width: 600px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manuals{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: 1s;
+}
+.manuals:not(:last-child){
+    margin-right: 40px;
+}
+.manuals:hover{
+    background: black;
+}
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+.auto{
+    position: absolute;
+    width: 600px;
+    margin-top: 660px;
+    display: flex;
+    justify-content: center;
+}
+.auto div{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+.auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .auto .auto1{
+    background: black;
+}
+#radio2:checked ~ .auto .auto2{
+    background: black;
+}
+#radio3:checked ~ .auto .auto3{
+    background: black;
+}
+#radio4:checked ~ .auto .auto4{
+    background: black;
+}
+#radio5:checked ~ .auto .auto5{
+    background: black;
+}
+/* ------end of collection section------ */
+
+/* ------team section------ */
+.team{
+    height: 700px;
+    width: 100%;
+    background-color: bisque;
+}
+.teamSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.team img{
+    height: 600px;
+    width: 550px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.teamText{
+    overflow: hidden;
+}
+.teamText h1{
+    font-size: 60px;
+    width: 500px;
+    padding-bottom: 80px;
+    padding-left: 0px;
+}
+.teamText h2{
+    font-size: 40px;
+    padding: 20px;
+    padding-left: 0px;
+    font-style: italic;
+    text-decoration: underline;
+}
+.teamText p{
+    font-size: 20px;
+}
+.teamLink{
+    color: black;
+    background-color: skyblue;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ------end of team section------ */
+
+/* ------footer section------ */
+footer{
+    height: 170px;
+    width: 100%;
+    background-color: darkgray;
+}
+footer p{
+    font-size: 30px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.end{
+    font-size: 17px;
+    text-transform: capitalize;
+}
+/* ------end of footer section------ */
+}
+/* ------end of media queries for laptop------ */
+    
+
+/* ------media queries for mobile phones */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    /* ----nav section---- */
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .brandImg img{
+        height: 60px;
+        width: 60px;
+        padding: 10px 0px;
+        /* border-radius: 50%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 42%;
+    }
+    nav ul li{
+        list-style-type: none;
+        font-weight: bold;
+        /* padding-bottom: 5px; */
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nft{
+        font-weight: normal;
+    }
+    .brandLink a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-bottom: 10px;
+        padding-right: 5px;
+    }
+
+    /* ---home section--- */
+    .bannerImg{
+        height: 400px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    .bannerText{
+        height: 400px;
+        width: 100%;
+        background-color: skyblue;
+    }
+    .bannerText h1{
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .bannerText h3{
+        font-size: 28px;
+        font-weight: normal;
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .bannerText p{
+        text-align: center;
+        font-size: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .bannerText a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding-top: 20px;
+    }
+
+    /* ------collection section------ */
+    .collection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+    }
+    .slider{
+        width: 300px;
+        height: 350px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .slides{
+        width: 500%;
+        height: 350px;
+        display: flex;
+    }
+    .slides input{
+        display: none;
+    }
+    .slide{
+        width: 20%;
+        transition: 1s;
+    }
+    .slide img{
+        width: 300px;
+        height: 350px;
+    }
+    .manual{
+        position: absolute;
+        width: 300px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+    .manuals{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transform: 1s;
+    }
+    .manuals:not(:last-child){
+        margin-right: 40px;
+    }
+    .manuals:hover{
+        background: black;
+    }
+    #radio1:checked ~ .first{
+        margin-left: 0%;
+    }
+    #radio2:checked ~ .first{
+        margin-left: -20%;
+    }
+    #radio3:checked ~ .first{
+        margin-left: -40%;
+    }
+    #radio4:checked ~ .first{
+        margin-left: -60%;
+    }
+    #radio5:checked ~ .first{
+        margin-left: -80%;
+    }
+    .auto{
+        position: absolute;
+        width: 300px;
+        margin-top: 310px;
+        display: flex;
+        justify-content: center;
+    }
+    .auto div{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .auto div:not(:last-child){
+        margin-right: 40px;
+    }
+    #radio1:checked ~ .auto .auto1{
+        background: black;
+    }
+    #radio2:checked ~ .auto .auto2{
+        background: black;
+    }
+    #radio3:checked ~ .auto .auto3{
+        background: black;
+    }
+    #radio4:checked ~ .auto .auto4{
+        background: black;
+    }
+    #radio5:checked ~ .auto .auto5{
+        background: black;
+    }
+
+    /* ------team section------ */
+    .team{
+        height: 300px;
+        width: 100%;
+        background-color: bisque;
+    }
+    .teamSection{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .team img{
+        height: 250px;
+        width: 275px;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .teamText{
+        overflow: hidden;
+    }
+    .teamText h1{
+        font-size: 25px;
+        width: 250px;
+        padding-left: 0px;
+    }
+    .teamText h2{
+        font-size: 20px;
+        padding: 10px;
+        padding-left: 0px;
+        font-style: italic;
+        text-decoration: underline;
+    }
+    .teamText p{
+        font-size: 13px;
+    }
+    .teamLink{
+        color: black;
+        background-color: skyblue;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* ------footer section------ */
+    footer{
+        height: 80px;
+        width: 100%;
+        background-color: darkgray;
+    }
+    footer p{
+        font-size: 15px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        text-align: center;
+    }
+    .end{
+        font-size: 17px;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+}
+/* ------end of media queries for mobile phones------ */
